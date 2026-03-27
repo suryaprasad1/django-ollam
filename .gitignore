@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual Environment
+venv/
+env/
+myenv/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Static & Media
+/media/
+staticfiles/
+
+# Environment variables
+.env
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Migrations (optional - be careful)
+**/migrations/*
+!**/migrations/__init__.py
+
+# Coverage / testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Node (if using frontend)
+node_modules/
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+
+# Terraform (DevOps)
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# AWS
+.aws/
+
+# Secrets (IMPORTANT)
+*.pem
+*.key
