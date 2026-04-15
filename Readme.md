@@ -34,7 +34,7 @@ OLLAMA_HOST=0.0.0.0 ollama serve
 Use a lightweight model (recommended):
 
 ```bash
-ollama pull phi3 
+ollama pull phi3 , llama3.2:1b
 ```
 
 Check models:
@@ -49,7 +49,7 @@ ollama list
 
 ```bash
 curl http://localhost:11434/api/generate -d '{
-  "model": "phi3",
+  "model": "phi3", "llama3.2:1b",
   "prompt": "Hello",
   "stream": false
 }'
