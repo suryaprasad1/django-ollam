@@ -34,7 +34,7 @@ OLLAMA_HOST=0.0.0.0 ollama serve
 Use a lightweight model (recommended):
 
 ```bash
-ollama pull phi3
+ollama pull phi3 
 ```
 
 Check models:
