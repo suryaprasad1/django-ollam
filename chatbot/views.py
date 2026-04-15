@@ -12,15 +12,15 @@ from django.utils import timezone
 #openai_api_key = '********'
 #openai.api_key = openai_api_key
 
-from openai import OpenAI
+#from openai import OpenAI
 
 import requests
 
 def ask_ai(message):
-    url = "http://3.219.233.23:11434/api/chat"
+    url = "http://3.239.62.199:11434/api/chat"
 
     payload = {
-            "model": "phi3",
+            "model": "llama3.2:1b",
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": message}
@@ -34,7 +34,7 @@ def ask_ai(message):
         return response.json()["message"]["content"]
     else:
         return f"Error: {response.text}"
-
+    
 # Create your views here.
 def chatbot(request):
     chats = Chat.objects.filter(user=request.user)
